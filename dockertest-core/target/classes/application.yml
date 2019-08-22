@@ -6,17 +6,10 @@ spring:
     active: dev
   # 数据源
   datasource:
-    #    url: jdbc:mysql://219.153.97.183:3306/log_schema?characterEncoding=utf8&useSSL=true
-    #    username: scmroot
     url: jdbc:mysql://${mysql_url:23.105.194.11}:${mysql_port:3306}/${mysql_database:authorization}?characterEncoding=utf8&useSSL=false
     username: ${mysql_username:root}
     password: ${mysql_password:123456}
-    #    password: scmroot2019.com
     driver-class-name: com.mysql.jdbc.Driver
 logging:
   config: classpath:logback-spring.xml
   path: ${log-path:data/logs}
-
-snowflake:
-  service:
-    url: ${snowflake-service-url:http://snowflake.dev.cncommdata.cn}

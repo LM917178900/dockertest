@@ -8,8 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * ElasticsearchApplication
  */
-@SpringBootApplication(scanBasePackages = {"cn.lei", "cc.iooc"})
-@EnableFeignClients(basePackages = {"cn.lei", "cc.iooc"})
+@SpringBootApplication(scanBasePackages = {"cn.lei"})
+@EnableFeignClients(basePackages = {"cn.lei"})
 @MapperScan("cn.lei.dockertest.dao")
 public class DockertestApplication {
 

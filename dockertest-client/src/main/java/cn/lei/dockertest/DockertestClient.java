@@ -1,17 +1,15 @@
 package cn.lei.dockertest;
 
-import org.springframework.cloud.openfeign.FeignClient;
+import cn.lei.dockertest.feign.DockertestFeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.List;
 
 
 /**
  * DockertestClient
  */
 @Component
-public class DockertestFeignClient {
+public class DockertestClient {
 
 
     /**

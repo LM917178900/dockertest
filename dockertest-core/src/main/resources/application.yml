@@ -13,7 +13,3 @@ spring:
 logging:
   config: classpath:logback-spring.xml
   path: ${log-path:data/logs}
-
-snowflake:
-  service:
-    url: ${snowflake-service-url:http://snowflake.dev.cncommdata.cn}

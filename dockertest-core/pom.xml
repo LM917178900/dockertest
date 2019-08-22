@@ -33,12 +33,6 @@
         </dependency>
 
         <dependency>
-            <groupId>cc.iooc</groupId>
-            <artifactId>snowflake-client</artifactId>
-            <version>${snowflake.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.56</version>
@@ -85,12 +79,64 @@
 
     </dependencies>
 
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
+<!--    <properties>-->
+<!--        <docker.image.prefix>springio</docker.image.prefix>-->
+<!--    </properties>-->
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>com.spotify</groupId>-->
+<!--                <artifactId>dockerfile-maven-plugin</artifactId>-->
+<!--                <version>1.4.9</version>-->
+<!--                <configuration>-->
+<!--                    <repository>dockertest/dockertest-core</repository>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-dependency-plugin</artifactId>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>unpack</id>-->
+<!--                        <phase>package</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>unpack</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <artifactItems>-->
+<!--                                <artifactItem>-->
+<!--                                    <groupId>cn.lei</groupId>-->
+<!--                                    <artifactId>dockertest</artifactId>-->
+<!--                                    <version>1.0-SNAPSHOT</version>-->
+<!--                                </artifactItem>-->
+<!--                            </artifactItems>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
         </plugins>
     </build>
+<!--    <executions>-->
+<!--        <execution>-->
+<!--            <id>default</id>-->
+<!--            <phase>install</phase>-->
+<!--            <goals>-->
+<!--                <goal>build</goal>-->
+<!--                <goal>push</goal>-->
+<!--            </goals>-->
+<!--        </execution>-->
+<!--    </executions>-->
 </project>
